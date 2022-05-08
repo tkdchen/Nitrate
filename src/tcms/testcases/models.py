@@ -63,10 +63,7 @@ class PlainText:
 
 class TestCaseStatus(EnumLike, TCMSActionModel):
     id = models.AutoField(db_column="case_status_id", primary_key=True)
-    # FIXME: if name has unique value for each status, give unique constraint
-    # to this field. Otherwise, all SQL queries filtering upon this
-    #        field will cost much time in the database side.
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     description = models.TextField(null=True, blank=True)
 
     class Meta:
