@@ -162,8 +162,8 @@ place for you to get reference and started.
 
 .. _Development: https://nitrate.readthedocs.io/en/latest/contribution.html#development
 
-Report Issues
--------------
+Report Issue
+------------
 
 If you've stumbled upon an issue in Nitrate, please refer to `Report an Issue`_
 to create one `here`_.
